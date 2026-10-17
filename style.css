@@ -1,0 +1,202 @@
+
+
+/* -------------------- Page Background -------------------- */
+.stApp {
+    background:
+        radial-gradient(circle at 10% 0%, rgba(247, 147, 26, 0.10), transparent 28%),
+        #0b1120;
+    color: #edf2f7;
+}
+
+/* Main content width and spacing */
+.block-container {
+    max-width: 1180px;
+    padding-top: 2.2rem;
+    padding-bottom: 3rem;
+}
+
+/* -------------------- App Heading -------------------- */
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 26px;
+    margin-bottom: 16px;
+    background: linear-gradient(120deg, #172338, #111a2b);
+    border: 1px solid rgba(247, 147, 26, 0.28);
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+}
+
+.hero-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    flex-shrink: 0;
+    border-radius: 17px;
+    background: linear-gradient(135deg, #ffb347, #f7931a);
+    color: #101827;
+    font-size: 38px;
+    font-weight: 800;
+    box-shadow: 0 5px 18px rgba(247, 147, 26, 0.22);
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 2.35rem;
+    line-height: 1.15;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+}
+
+.hero-subtitle {
+    margin-top: 5px;
+    color: #ffb347;
+    font-size: 1.05rem;
+    font-weight: 600;
+}
+
+.intro-text {
+    margin: 0 0 28px 4px;
+    color: #aab7ca;
+    font-size: 1rem;
+}
+
+/* -------------------- Section Heading -------------------- */
+.section-heading {
+    margin: 10px 0 16px;
+    color: #f4f7fb;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* -------------------- Market Cards -------------------- */
+.market-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-height: 82px;
+    padding: 17px 19px;
+    margin: 0 0 18px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 16px;
+    background: rgba(22, 34, 53, 0.88);
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.market-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(247, 147, 26, 0.55);
+}
+
+
+div[data-testid="stNumberInput"] button {
+    color: #ffb347;
+    background: #18263b;
+    border: none;
+}
+
+div[data-testid="stNumberInput"] input:focus {
+    border-color: #f7931a;
+    box-shadow: 0 0 0 1px #f7931a;
+}
+
+/* -------------------- Prediction Button -------------------- */
+div[data-testid="stButton"] > button {
+    min-height: 52px;
+    border: 1px solid #ffb347;
+    border-radius: 12px;
+    background: linear-gradient(100deg, #f7931a, #ffb347);
+    color: #111827;
+    font-size: 1rem;
+    font-weight: 800;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+div[data-testid="stButton"] > button:hover {
+    border-color: #ffc56e;
+    color: #111827;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(247, 147, 26, 0.22);
+}
+
+.predict-area {
+    margin-top: 28px;
+}
+
+/* -------------------- Prediction Result -------------------- */
+.result-card {
+    margin-top: 24px;
+    padding: 26px;
+    text-align: center;
+    border: 1px solid rgba(247, 147, 26, 0.45);
+    border-radius: 18px;
+    background: linear-gradient(135deg, #172338, #101827);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.20);
+    animation: resultFadeIn 0.45s ease-out;
+}
+
+.result-eyebrow {
+    color: #ffb347;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.result-label {
+    margin-top: 10px;
+    color: #c3cede;
+    font-size: 1rem;
+}
+
+.result-price {
+    margin: 8px 0;
+    color: #ffb347;
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 850;
+    letter-spacing: -1px;
+}
+
+.result-note {
+    color: #9eacc0;
+    font-size: 0.85rem;
+}
+
+@keyframes resultFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* -------------------- Small Screens -------------------- */
+@media (max-width: 700px) {
+    .block-container {
+        padding-top: 1rem;
+    }
+
+    .hero {
+        padding: 17px;
+        gap: 13px;
+    }
+
+    .hero-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+}
