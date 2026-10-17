@@ -1,3 +1,5 @@
+<img width="1272" height="875" alt="Screenshot 2026-10-17 215801" src="https://github.com/user-attachments/assets/09c9fde3-d0b8-4a63-981a-58a53276b081" />
+<img width="1272" height="875" alt="Screenshot 2026-10-17 215801" src="https://github.com/user-attachments/assets/759d368b-9280-437e-9723-2f69f9bc6083" />
 # CoinPlus-AI
 cryptocurrency price estimation. CoinPulse AI is a machine learning project that predicts Bitcoin’s closing price using USDT and BNB market data. Built with Python, Scikit-learn, and Streamlit, it uses Random Forest Regression and an interactive web interface.
 
